@@ -17,6 +17,8 @@ const UserSchema = new mongoose.Schema(
     },
     img: {
       type: String,
+      default:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgsGJ0d70m_MThfvqHv2I-KZJZjWvSCyguUQ5hFkaAGvyVre_drupR7A1XXSbDYURR03I&usqp=CAU",
     },
     subscribers: {
       type: Number,

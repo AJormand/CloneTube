@@ -37,7 +37,7 @@ router.get("/trend", trend);
 router.get("/random", random);
 
 //get subscribed channels videos
-router.get("/sub", subscribedVideos);
+router.get("/sub", verifyToken, subscribedVideos);
 
 //get videos by tags
 router.get("/tags", getByTag);

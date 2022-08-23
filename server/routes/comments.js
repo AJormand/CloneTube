@@ -9,7 +9,7 @@ import {
 const router = express.Router();
 
 router.post("/", verifyToken, addComment);
-router.delete("/:id", verifyToken, deleteComment);
+router.delete("/:id/:videoId", verifyToken, deleteComment);
 router.get("/:videoId", verifyToken, getComments);
 
 export default router;
